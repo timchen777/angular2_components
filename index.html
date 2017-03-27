@@ -1,6 +1,21 @@
 <!doctype html>
+<html>
+<head lang="en">
+  <title>Angular 2 Components</title>
+</head>
+<body>
+<ngc-app></ngc-app>    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.0/es6-
+shim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-
+beta.15/angular2-polyfills.js"></script>
 <script src="jspm_packages/system.js"></script>
 <script src="config.js"></script>
 <script>
-  System.import('main.js');
+  // p.73 bootstrap.js file is responsible for loading all the necessary JavaScript
+  // dependencies for our application as well as bootstrapping the Angular framework.    
+  // System.import('main.js');    
+  System.import('lib/bootstrap.js');    
 </script>
+</body>
+</html>

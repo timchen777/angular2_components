@@ -8,7 +8,13 @@ System.config({
   },
 
   map: {
+    "@angular/common": "npm:@angular/common@4.0.0",
+    "@angular/compiler": "npm:@angular/compiler@4.0.0",
+    "@angular/core": "npm:@angular/core@4.0.0",
+    "@angular/platform-browser-dynamic": "npm:@angular/platform-browser-dynamic@4.0.0",
     "jquery": "npm:jquery@3.2.1",
+    "rxjs": "npm:rxjs@5.2.0",
+    "text": "github:systemjs/plugin-text@0.0.9",
     "typescript": "npm:typescript@2.2.1",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.1"
@@ -72,6 +78,30 @@ System.config({
     },
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
+    },
+    "npm:@angular/common@4.0.0": {
+      "@angular/core": "npm:@angular/core@4.0.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:@angular/compiler@4.0.0": {
+      "@angular/core": "npm:@angular/core@4.0.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:@angular/core@4.0.0": {
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "rxjs": "npm:rxjs@5.2.0",
+      "zone.js": "npm:zone.js@0.8.5"
+    },
+    "npm:@angular/platform-browser-dynamic@4.0.0": {
+      "@angular/common": "npm:@angular/common@4.0.0",
+      "@angular/compiler": "npm:@angular/compiler@4.0.0",
+      "@angular/core": "npm:@angular/core@4.0.0",
+      "@angular/platform-browser": "npm:@angular/platform-browser@4.0.0"
+    },
+    "npm:@angular/platform-browser@4.0.0": {
+      "@angular/common": "npm:@angular/common@4.0.0",
+      "@angular/core": "npm:@angular/core@4.0.0",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:asn1.js@4.9.1": {
       "bn.js": "npm:bn.js@4.11.6",
@@ -292,6 +322,11 @@ System.config({
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
+    "npm:rxjs@5.2.0": {
+      "buffer": "github:jspm/nodelibs-buffer@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "symbol-observable": "npm:symbol-observable@1.0.4"
+    },
     "npm:sha.js@2.4.8": {
       "buffer": "github:jspm/nodelibs-buffer@0.1.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -341,6 +376,13 @@ System.config({
     },
     "npm:vm-browserify@0.0.4": {
       "indexof": "npm:indexof@0.0.1"
+    },
+    "npm:zone.js@0.8.5": {
+      "crypto": "github:jspm/nodelibs-crypto@0.1.0",
+      "events": "github:jspm/nodelibs-events@0.1.1",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "timers": "github:jspm/nodelibs-timers@0.1.0"
     }
   }
 });
