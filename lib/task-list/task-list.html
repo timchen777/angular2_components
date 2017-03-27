@@ -1,0 +1,9 @@
+<!--The NgFor directive in Angular will create atemplate element from -->
+<!--its underlying content and instantiate as many elements from the-->
+<!--template as the expression evaluates to. -->
+<!--We currently have two tasks in our task-list-->
+<!--component, so this will create two instances of our template.-->
+<div *ngFor="let task of tasks" class="task">
+  <input type="checkbox" [checked]="task.done">
+  <div class="task__title">{{task.title}}</div>
+</div>

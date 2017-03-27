@@ -92,3 +92,6 @@ Now let's start live server to start a server and a browser with live reload
 > live-server
 if everything goes well, http://127.0.0.1:8080 shows Hello Chapter2!
 ???? Not working, didn't bootstrap app ?????
+============================ p.76 Create Task List ========================
+create a task-list component as a subcomponent of our main application component.
+p.77 live-server not working ????
